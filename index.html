@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WISDOM-IRVING'S WEBSITE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+<img src="pic1.png" alt="my-profile-picture" width="400" height="400">
+    <nav>
+      <button id="homeBtn" class="nav-btn active-nav">Home</button>
+      <button id="aboutBtn" class="nav-btn">About Me</button>
+      <button id="contactBtn" class="nav-btn">Contact Me</button>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <main id="homePage" class="page active" data-testid="test-home-page">
+    <h1 class="name">WISDOM IRVING</h1> 
+  <h3 class="Stack">Software Developer</h3> 
+  <h4 class="dev">Website Developer | App Developer</h4>
+  <h5 class="base">Abia State, Nigeria</h5>
+
+    <ul>
+       <li><a href="https://twitter.com/" target="_blank" rel="noo">Twitter</a></li>
+       <li><a href="https://LindIn.com/" target="_blank" rel="noo">LindIn</a></li>
+           <li><a href="https://github.com/" target="_blank" rel="noo">GitHub</a></li>
+    </ul>
+  </main>
+
+  <!-- About Page -->
+  <main id="aboutPage" class="page" data-testid="test-about-page">
+    <section data-testid="test-about-bio">
+      <h2>My Bio</h2>
+      <p>Hi, I'm WISDOM-IRVING a create Web developer who loves bringing ideas to life through clean code and beautiful design.I'm driven 
+        by curiosity and enjoy learning new tools that make the web more interactive and accessible.
+      </p>
+    </section>
+
+    <section data-testid="test-about-goals">
+      <h2>My Goals in This Program</h2>
+      <p> I’m an ambitious web developer dedicated to mastering front-end and back-end technologies.
+         My goal is to become a skilled full-stack developer capable of building impactful digital products that improve people’s lives.
+         I'm constantly learning modern technologies like JavaScript, React, and Node.js to build real-world solutions and
+         grow as a full-stack developer and I will still advance my learning to Java, Python, and PHP.
+         So I can become a confident full stack developer who builds creative projects.</p>
+    </section>
+
+    <section data-testid="test-about-confidence">
+      <h2>Areas of Low Confidence</h2>
+      <p>Sometimes I struggle with JavaScript,React and Tailwind, but I’m improving each day.</p>
+    </section>
+
+    <section data-testid="test-about-future-note">
+      <h2>Note to Future Me</h2>
+      <p>"Keep learning and never give up! You’re doing great, Just one day I will reach to my dreamed destination." I SAID TO MYSELF</p>
+    </section>
+
+    <section data-testid="test-about-extra">
+      <h2>Extra Thoughts</h2>
+      <p>Thank you to everyone supporting me on this journey, and am most grateful to God for everything!</p>
+    </section>
+  </main>
+
+  <!-- Contact Page -->
+  <main id="contactPage" class="page">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Full Name:</label>
+      <input id="name" type="text" data-testid="test-contact-name" aria-describedby="error-name" />
+      <div id="error-name" class="error" data-testid="test-contact-error-name"></div>
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" data-testid="test-contact-email" aria-describedby="error-email" />
+      <div id="error-email" class="error" data-testid="test-contact-error-email"></div>
+
+      <label for="subject">Subject:</label>
+      <input id="subject" type="text" data-testid="test-contact-subject" aria-describedby="error-subject" />
+      <div id="error-subject" class="error" data-testid="test-contact-error-subject"></div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" data-testid="test-contact-message" aria-describedby="error-message"></textarea>
+      <div id="error-message" class="error" data-testid="test-contact-error-message"></div>
+
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+      <div id="success-message" class="success" data-testid="test-contact-success"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
